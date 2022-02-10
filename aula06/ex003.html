@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de JS</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+            font: normal 20px 'Arial';
+        }
+
+        h1 {
+            color: rgb(255, 184, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Este é meu primeiro script</p>
+    
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) //Este comando só retonrna uma string
+        var n1 = Number.parseFloat(window.prompt('Digite outro número: '))
+        //Number.parseInt(n) > força a variável a ser inteira
+        // Number.parseFloat(n) > força a variável a flutuante
+        // Number(n) > comando geral, que irá retornar de acorod com o valor informado o tipo
+        // Para converter em string: String(n) ou n.toString()
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+        // (STRING + STRING) o sinal de + é concatenação
+        // (NUMBER + NUMBER) o sinal de + é adição
+
+        //n.length > determina o número de caracteres de uma string
+        //n. toUpperCase() > converta para maiúsculas
+        //n.toLowerCase() > converte para letras minúsculas
+        
+
+    </script>
+</body>
+</html>
