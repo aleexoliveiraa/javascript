@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em DOM</title>
+    <style>
+        div#area {
+            background-color: blue;
+            color: whitesmoke;
+            font: bold 16px 'arial';
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+
+        div#area2 {
+            background-color: red;
+            color: whitesmoke;
+            font: bold 16px 'arial';
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">Interaja...</div>
+    <div id="area2">Interaja novamente</div>
+    <script>
+        /*Método 1*/
+        var a2 = document.getElementById('area2')
+        a2.addEventListener('click', clicar1)
+        a2.addEventListener('mouseenter', entrar1)
+        a2.addEventListener('mouseout', saiu1)
+
+        function clicar1() {
+            a2.innerText = 'Clicou!'
+            a2.style.backgroundColor = 'blue'
+        }
+
+        function entrar1() {
+            a2.innerText = 'Entrou!'
+        }
+
+        function saiu1() {
+            a2.innerText = 'Saiu!'
+            a2.style.backgroundColor = 'red'
+        }
+
+        /*Método 2*/
+        var a = document.getElementById('area')
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'blue'
+        }
+    </script>
+</body>
+</html>
