@@ -1,0 +1,26 @@
+body {
+    background-color: #034159;
+    font: normal 15px 'Arial';
+}
+
+header > h1 {
+    color: #0CF25D;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+section {
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+}
+
+footer {
+    color: #0CF25D;
+    font-style: italic;
+    text-align: center;
+}
